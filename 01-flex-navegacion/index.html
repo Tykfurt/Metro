@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ejercicio 1 — Flexbox: Barra de Navegación</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       EJERCICIO 1: Barra de Navegación con Flexbox
+       ============================================================
+       OBJETIVO: Construir una barra de navegación usando Flexbox.
+
+       RESULTADO ESPERADO:
+       ┌──────────────────────────────────────────────────────┐
+       │  Logo    Inicio  Productos  Blog        [Contacto]  │
+       └──────────────────────────────────────────────────────┘
+       - El logo queda a la izquierda.
+       - Los links "Inicio", "Productos", "Blog" quedan al centro.
+       - El botón "Contacto" queda al extremo derecho.
+       - Todos los elementos están centrados verticalmente.
+
+       TUS TAREAS (busca los comentarios TODO en styles.css):
+       1. Activar Flexbox en el <nav>
+       2. Alinear los ítems verticalmente al centro
+       3. Distribuir el espacio entre los grupos
+       4. Lograr que el botón quede siempre a la derecha
+  ============================================================ -->
+
+  <nav class="navbar">
+    <div class="navbar__logo">MiSitio</div>
+
+    <ul class="navbar__links">
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Productos</a></li>
+      <li><a href="#">Blog</a></li>
+    </ul>
+
+    <button class="navbar__cta">Contacto</button>
+  </nav>
+
+  <!-- Zona de referencia visual -->
+  <main class="demo-content">
+    <h1>Bienvenido a MiSitio</h1>
+    <p>Esta es la página de ejemplo. La barra de navegación de arriba debe ajustarse usando Flexbox.</p>
+  </main>
+
+</body>
+</html>

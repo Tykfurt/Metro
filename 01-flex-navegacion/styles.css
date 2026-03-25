@@ -1,0 +1,116 @@
+/* ============================================================
+   EJERCICIO 1 — Flexbox: Barra de Navegación
+   ============================================================ */
+
+/* --- Estilos base (no modificar) --- */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f0f2f5;
+}
+
+.navbar {
+  background: #1a1a2e;
+  padding: 0 2rem;
+  height: 64px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: inherit;
+}
+  /* ┌─────────────────────────────────────────────┐
+     │ TODO 1: Activa Flexbox en este contenedor   │
+     │ Propiedad: display                          │
+     └─────────────────────────────────────────────┘ */
+
+  /* ┌─────────────────────────────────────────────┐
+     │ TODO 2: Centra los ítems en el eje          │
+     │ transversal (verticalmente)                 │
+     │ Propiedad: align-items                      │
+     └─────────────────────────────────────────────┘ */
+
+  /* ┌─────────────────────────────────────────────┐
+     │ TODO 3: Distribuye el espacio sobrante      │
+     │ entre los grupos (logo / links / botón)     │
+     │ Propiedad: justify-content                  │
+     │ Valor sugerido: space-between               │
+     └─────────────────────────────────────────────┘ */
+
+
+/* --- Logo --- */
+.navbar__logo {
+  color: #e94560;
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+/* --- Lista de links --- */
+.navbar__links {
+  list-style: none;
+  display: flex;
+  gap: calc(2);
+
+  /* ┌─────────────────────────────────────────────┐
+     │ TODO 4: Haz que los links queden en fila   │
+     │ horizontal usando Flexbox                   │
+     │ Propiedades: display, gap                   │
+     └─────────────────────────────────────────────┘ */
+}
+
+.navbar__links a {
+  color: #ccc;
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.2s;
+}
+
+.navbar__links a:hover {
+  color: #fff;
+}
+
+/* --- Botón CTA --- */
+.navbar__cta {
+  background: #e94560;
+  color: #fff;
+  border: none;
+  padding: 0.5rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  transition: background 0.2s;
+
+  /* ┌─────────────────────────────────────────────┐
+     │ BONUS: ¿Cómo empujarías este botón          │
+     │ al extremo derecho si no usas               │
+     │ justify-content: space-between?             │
+     │ Pista: propiedad "margin-left"              │
+     └─────────────────────────────────────────────┘ */
+}
+
+.navbar__cta:hover {
+  background: #c73652;
+}
+
+/* --- Contenido de demo --- */
+.demo-content {
+  max-width: 800px;
+  margin: 4rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+}
+
+.demo-content h1 {
+  margin-bottom: 1rem;
+  color: #1a1a2e;
+}
